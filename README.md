@@ -51,7 +51,7 @@ HTML
 
 ## Installation and setup
 
-Git clone the repository at 
+Git clone the repository at https://github.com/Timoh97/Personal-Gallery.git
 
 
 #### create and activate virtual environment
@@ -85,8 +85,8 @@ python manage.py server
  ## SUPPORT and CONTACT
  * +254791417147
  * timohmugendi@gmail.com
- * timothy.nthiga@student.moringaschool.com
+ 
 
  ## LICENSE AND COPYRIGHT
-[Mit License] Timothy Mugendi **2021**
+[MIT License] Timothy Mugendi **2021**
 
