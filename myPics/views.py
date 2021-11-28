@@ -7,7 +7,7 @@ from . models import Image, Location, Category
 # Create your views here.
 
 def welcome(request):
-    title = 'Welcome to A++ Gallery'
+    title = 'Welcome to A+ Gallery'
     images = Image.objects.all()
     context={
         'title': title,
