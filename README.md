@@ -1,8 +1,8 @@
-# Name of project
+# NAME OF THE PROJECT
 
 Gallery made using django web framework to showcase my photos.
 
-## Required features
+## REQUIRED FEATURES
 
 
 View different photos that interest me.
@@ -27,7 +27,7 @@ I am a qualified Engineer,fluent in the latest enterprise and web development te
 I collaborate with the team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.
 
 
-## Prerequisite
+## PREREQUISITES
 
 Python3
 
@@ -35,7 +35,7 @@ Virtual Environment
 
 django
 
-## Technologies and Languages
+## TECHNOLOGIES AND LANGUAGES
 
 Version control - git 
 
@@ -49,22 +49,22 @@ Bootstrap
 
 HTML
 
-## Installation and setup
+## INSTALLATION AND SET UP
 
 Git clone the repository at https://github.com/Timoh97/Personal-Gallery.git
 
 
-#### create and activate virtual environment
+#### CREATION AND ACTIVATION OF VIRTUAL ENVIRONMENT
 
 virtualenv venv --python=python3
 
 source venv/bin/activate
 
-#### install required dependencies
+#### INSTALL REQUIRED DEPENDENCIES
 
 pip install -r requirements.txt
 
-#### copy environment variable
+#### COPY ENVIRONMENT VARIABLE
 
 cp env.sample .env
 
@@ -79,14 +79,14 @@ The project is working as required,fully responsive and has no known bugs.
 
 python manage.py server
 
-## Live link
+## LIVE LINK
 
 
- ## SUPPORT and CONTACT
+ ## SUPPORT AND CONTACT
  * +254791417147
  * timohmugendi@gmail.com
  
 
  ## LICENSE AND COPYRIGHT
-[MIT License] Timothy Mugendi **2021**
+[MIT License] **Timothy Mugendi** **2021**
 
