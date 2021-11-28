@@ -72,7 +72,10 @@ python manage.py server
 ## Live link
 
 
-
+ ## SUPPORT and CONTACT
+ * +254791417147
+ * timohmugendi@gmail.com
+ * timothy.nthiga@student.moringaschool.com
 
 ## License
 
