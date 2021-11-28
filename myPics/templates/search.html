@@ -4,9 +4,11 @@
 
   <div class="row">
     {% if images %}
-      <h2>Found {{ image|length }} of searched term {{message}}</h2>
+    
+      <h2 style="color: red;">Found <span style="color: blue;">{{ images|length }}</span> of searched item in category <span style="color: blue;">{{message}}</span></h2>
     {% else %}
-      <h2> Found none of the images for the search term {{message}}</h2>
+      <h2> Found none of the images for the search category {{message}}</h2>
+      
     {% endif %}
 
   </div>
@@ -15,8 +17,11 @@
 
   {% if images %}
     {% for image in images %}
-      <div class="col-sm-6 col-md-3">
-        <h1>{{image.name}}</h1>
+      <div class="" >
+        <img src="{{image.image.url}}" width="150">   <br> <br>
+        <p class="text">The picture is taken in <span style="color: blue;">{{image.location}}</span></p>
+        <p class="text">{{image.description}}</p>
+       
       </div>
     {% endfor %}
   {% endif %}
