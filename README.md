@@ -77,7 +77,6 @@ python manage.py server
  * timohmugendi@gmail.com
  * timothy.nthiga@student.moringaschool.com
 
-## License
-
-MIT 2021
+ ## LICENSE AND COPYRIGHT
+[Mit License] Timothy Mugendi **2021**
 
