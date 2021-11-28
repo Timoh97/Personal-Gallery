@@ -25,8 +25,8 @@ class Image(models.Model):
         return self.name
         
     @classmethod
-    def search_by_category(cls,search_term):
-        image = cls.objects.filter(category__icontains=search_term)
+    def search_image(cls,search_term):
+        image = cls.objects.filter(name__icontains=search_term)
         return image
     
     
