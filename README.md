@@ -62,6 +62,9 @@ cp env.sample .env
 
 source .env
 
+## KNOWN BUGS
+The project is working as required,fully responsive and has no known bugs.
+
 #### running the application
 
 python manage.py server
