@@ -28,7 +28,9 @@ class Image(models.Model):
     def save_images(self):
         self.save()
         
-    def update_images(self,description,category,location):
+    def update_images(self,image,name,description,category,location):
+        self.image = image
+        self.name = name
         self.description = description
         self.location = location
         self.category = category
