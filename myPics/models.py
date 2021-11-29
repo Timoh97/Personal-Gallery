@@ -23,10 +23,20 @@ class Image(models.Model):
     
     def __str__(self):
         return self.name
+     
+     
+    def save_images(self):
+        self.save()
         
-    @classmethod
-    def search_image(cls,search_term):
-        image = cls.objects.filter(name__icontains=search_term)
-        return image
+    def update_images(self,description,category,location):
+        self.description = description
+        self.location = location
+        self.category = category
+        self.save()
+        
+           
+    
+    
+    
     
     
