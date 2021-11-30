@@ -12,19 +12,9 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </head>
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle"   style="background-color: grey; font-size: x-large; color: white;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      MY GALLERY
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">Action</a>
-      <a class="dropdown-item" href="#">Another action</a>
-      <a class="dropdown-item" href="#">Something else here</a>
-    </div>
-  </div>
 <body class="container" style="background-color: #FD974F; margin-top: 2em; border-radius: 10px; margin-bottom: 2em; padding: 2em; border: 4px solid white; color: white; font-size: x-large;">
     <header>
-        
+        <button style="padding-left: .1em;border-radius: 10px;"><a class="navbar-brand" href="{% url 'welcome' %}">MY GALLERY</a></button>
     </header>
     <main class="row">
             <h1 class="text-center" style="color: crimson;">THIS IS MY PICTURE GALLERY</h1>

@@ -4,7 +4,12 @@
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button style="padding-left: .2em;border-radius: 10px;"><a class="navbar-brand" href="{% url 'welcome' %}">BACK</a></button>
+        <button style="padding-left: .2em;border-radius: 10px;"><a class="navbar-brand" href="{% url 'homepage' %}">Back home</a></button>
+        <button style="padding-left: .2em;border-radius: 10px;"><a class="navbar-brand" >Technology</a></button>
+        <button style="padding-left: .2em;border-radius: 10px;"><a class="navbar-brand" >Tourism</a></button>
+        <button style="padding-left: .2em;border-radius: 10px;"><a class="navbar-brand" >Football</a></button>
+        <button style="padding-left: .2em;border-radius: 10px;"><a class="navbar-brand" >Philosophy</a></button>
+       
       </div>
 
       <!-- Adding a search form  -->
@@ -14,7 +19,7 @@
 
           <div class="input-group">
             <div>
-              <input type="text" class="form-control" placeholder="Search" name="search"> 
+              <input type="text" class="form-control" placeholder="Search by category" name="search"> 
             </div> <br> <br>
             <div class="input-group-btn">
               <button class="btn btn-dark" action="{% url 'search_results' %}" type="submit"><i class="glyphicon glyphicon-search"></i>Search</button>

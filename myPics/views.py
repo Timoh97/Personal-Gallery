@@ -7,11 +7,8 @@ from . models import Image, Location, Category
 # Create your views here.
 
 def homepage(request):
-    title = 'This is the home page'
-    context={
-        'title': title
-    }
-    return render(request, 'home.html', context)
+
+    return render(request, 'home.html')
 
 def welcome(request):
     title = 'Welcome to A+ Gallery'
@@ -26,7 +23,7 @@ def welcome(request):
 
 def search_results(request):
 
-    if 'search' in request.GET and request.GET["search"]:
+    if "search"in request.GET and request.GET["search"]:
         search_term = request.GET.get("search")
         searched_images = Image.search_image(search_term)
         message = f"{search_term}"

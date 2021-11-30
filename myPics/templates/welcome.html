@@ -1,24 +1,27 @@
 {%extends 'base.html'%}
 
 {% block content %}
+
 {{block.super}}
 <div>
-    {%for image in images%}
+    
+    {% for image in images %}
 
-<div class="row" style="background-color: #FD974F; padding:1em; border-radius: 10px; margin: 1em;">
+<div class="row" style="background-color: #f59957; border: 3px solid white; padding:1em; border-radius: 10px; margin: 1em;">
 
     <div class="col-md-3" styles="padding:2em;  margin-top:2em; border: 1em solid #FEFE24">
-        <img src="{{image.image.url}}" width="200">     
-
+        <img src="/media/images/Mohamed-Salah-Contact-Information.jpg" width="200">     
     </div>
+    {{ image.image.url }}
     <div class="col-md-9">
-        <h2><span style="color: crimson;">Name:</span> {{image.name}}</h2>
+        <h2><span style="color: crimson;"></span> {{image.image.url}}</h2>
         <p style="font-size: xx-large;"><span style="color: crimson;">Description:</span> {{image.description}}</p>
     </div>
 </div>
 
 
-    {%endfor%}
+    {% endfor %}
+    
 </div>
 {% endblock %}
 

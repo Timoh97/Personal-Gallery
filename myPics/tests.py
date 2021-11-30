@@ -29,8 +29,19 @@ class ImageTestClass(TestCase):
 
     # Set up method
     def setUp(self):
-        self.mahatma= Image(name = 'Mahatma', description='beautiful place',location='Mahatma',category='philosophy')
+        self.mahatma = Image(image ='pic',name = 'Mahatma', description='beautiful place',location='Paris',category='philosophy')
         
     # Testing  instance
     def test_instance(self):
         self.assertTrue(isinstance(self.mahatma,Image))
+        
+        # Testing Save Method
+    def test_save_method(self):
+        self.mahatma.save_images()
+        image = Image.objects.all()
+        self.assertTrue(len(image) > 0)
+    
+    def test_update_method(self):
+        self.mahatma.update_images()
+        image = Image.objects.all()
+        self.assertTrue(len(image) > 0)
