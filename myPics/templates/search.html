@@ -17,8 +17,7 @@
   {% if images %}
     {% for image in images %}
       <div class="" >
-        <img src="/media/images/Mohamed-Salah-Contact-Information.jpg
-        " width="200">
+        <img src="{{ image.image.url}}" width="200">
         <p class="text" style="font-size: xx-large;">The picture is taken in <span style="color: blue;">{{image.location}}</span></p>
         <p class="text" style="font-size: xx-large;">{{image.description}}</p>
        
